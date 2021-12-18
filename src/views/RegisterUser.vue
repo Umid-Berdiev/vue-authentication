@@ -12,7 +12,9 @@
 
       <button type="submit" name="button">Register</button>
       <ul>
-        <li v-for="(error, index) in errors" :key="index" v-text="error" />
+        <li v-for="(error, index) in errors" :key="index">
+          <p v-text="error" />
+        </li>
       </ul>
       <router-link to="/login"> Already have an account? Login. </router-link>
     </form>
